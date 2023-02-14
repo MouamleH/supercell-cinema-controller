@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "SuperCell Cinema Controller",
+    "description": "It Does Stuff",
+    "version": "1.0",
+    "author": "mouamle.hasan@gmail.com",  
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://*/*"
+    ],
+    "action": {
+        "default_title": "SuperCell Cinema Controller",
+        "default_popup": "popup/index.html",
+        "default_icon": {
+            "128": "resources/popcorn.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "run_at": "document_end",
+            "matches": [
+                "http://cinema2.shoofnetwork.net/*"
+            ],
+            "js": [
+                "main.js"
+            ]
+        }
+    ]
+}
