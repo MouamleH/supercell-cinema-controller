@@ -1,7 +1,6 @@
 const clearHistory = async () => {
     chrome.storage.sync.get(["watchHistory"]).then(result => {
         watchHistory = result.watchHistory;
-        console.log(watchHistory);
     })
     chrome.storage.sync.set({ "watchHistory": {} })
 
@@ -36,9 +35,7 @@ window.onload = () => {
     }
 
     chrome.storage.sync.get(["disableHistoryValue", "disableCaptionsValue"]).then(result => {
-        console.log(result);
         const { disableHistoryValue, disableCaptionsValue } = result;
-        console.log(disableHistoryValue, disableCaptionsValue);
         if (disableHistoryValue) {
             disableHistory.checked = true;
         }

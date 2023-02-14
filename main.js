@@ -67,9 +67,11 @@ const handleEpisodesClick = (episodes) => {
                 }
             })
 
-            const videos = await queryElement('#video');
-            const video = videos[0];
-            video.removeChild(video.firstChild);
+            if (disableCaptions) {
+                const videos = await queryElement('#video');
+                const video = videos[0];
+                video.removeChild(video.firstChild);
+            }
         }
     });
 }
