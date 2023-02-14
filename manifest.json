@@ -12,6 +12,9 @@
     "host_permissions": [
         "https://*/*"
     ],
+    "icons": {
+        "128": "resources/popcorn.png"
+    },
     "action": {
         "default_title": "SuperCell Cinema Controller",
         "default_popup": "popup/index.html",
