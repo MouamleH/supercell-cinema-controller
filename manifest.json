@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "SuperCell Cinema Controller",
     "description": "It Does Stuff",
-    "version": "1.0",
+    "version": "1.1",
     "author": "mouamle.hasan@gmail.com",  
     "permissions": [
         "storage",
