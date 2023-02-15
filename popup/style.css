@@ -4,9 +4,10 @@
 }
 
 body {
-  min-width: 250px;
+  min-width: 325px;
   max-width: 96%;
   font-family: "Poppins", sans-serif;
+  padding: 16px;
   margin: 0 auto;
 }
 
