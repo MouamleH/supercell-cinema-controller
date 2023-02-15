@@ -1,84 +1,34 @@
 <html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-    <style>
-        body {
-            color: #f7f1e3;
-            background-color: #2c2c54;
-            min-width: 250px;
-        }
-
-        h2{
-            text-align: center;
-            margin: 2px;
-            font-size: 28px;
-        }
-
-        .settings-container {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .settings-item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 20px;
-            padding: 4px;
-        }
-
-        .settings-item>a {
-            flex-grow: 2;
-        }
-
-        button {
-            width: 98%;
-            height: 32px;
-            color: #f7f1e3;
-            background-color: #b33939;
-            border: 2px solid #b33939;
-            transition-duration: 0.4s;
-            font-size: 20px;
-            margin: 5px;
-            border-radius: 8px;
-        }
-
-        button:hover {
-            background-color: white;
-            color: black;
-        }
-
-        button:active {
-            transform: translateY(8px);
-        }
-    </style>
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
+  <body>
     <h2>Cinema Controller</h2>
-    <hr>
     <div class="settings-container">
-        <div class="settings-item">
-            <a>Disable History</a>
-            <label class="switch">
-                <input id="disableHistory" type="checkbox">
-                <span class="slider round"></span>
-            </label>
-        </div>
-        <div class="settings-item">
-            <a>Disable Captions</a>
-            <label class="switch">
-                <input id="disableCaptions" type="checkbox">
-                <span class="slider round"></span>
-            </label>
-        </div>
+      <div class="settings-item">
+        <a>Disable History</a>
+        <label class="switch">
+          <input id="disableHistory" type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div class="settings-item">
+        <a>Disable Captions</a>
+        <label class="switch">
+          <input id="disableCaptions" type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+      </div>
     </div>
-    <hr>
     <button id="clearHistory">Clear History</button>
 
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
